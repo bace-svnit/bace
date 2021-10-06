@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@800&display=swap');
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background-image: url('img/paper-bg.jpg');
+  }
+/* .top{
+    
+} */
+
+  header{display:flex;
+    flex-flow: column;
+    text-decoration: none;
+    color: #6c5c46;
+    /* tex */
+    text-shadow: 0 1px 0 #f7e4c8;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0;
+    background-color: rgba(255, 255, 255, 0.322);
+    font-family: Alegreya;
+    width: 60vw;
+    margin: auto;
+    /* background-size: 6vw;
+    background-image: url('Watercolor-PNG-Transparent-HD-Photo.png'); */
+    }
+
+
+nav{
+    padding: 0.5vh 0vw;
+    width: 60vw;
+    margin: auto;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    
+
+    
+}
+nav ul{
+    display: flex;
+    justify-content:left;
+    list-style-type: none;
+    
+}
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 1vw;
+    border-right:2px solid white;
+    
+}
+nav ul li:first-child{
+    border-left:2px solid white;
+    
+}
+nav ul li a{
+    
+    text-decoration: none;
+    color: #6c5c46;
+}
+.active{
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+main{
+    display: flex;
+    flex-flow: row;
+
+}
+.cont1{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    color: #644c33;
+    font: bold 1.35em/1em Georgia,"Times New Roman",Times,serif;
+}
+.cont2{
+    width: 60vw;
+    /* background-color: rgb(27, 164, 255); */
+    padding-top: 4vh;
+    display: flex;
+    /* justify-content: center; */
+    flex-flow: column;
+    font: .93em/1.5em Georgia,"Times New Roman",Times,serif;
+    color: #453320;
+    min-height: 75vh;
+
+    
+}
+.cont3{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+    color: #644c33;
+    font: bold 1.35em/1em Georgia,"Times New Roman",Times,serif;
+}
+
+main div div h1{
+    color: #453320;
+    font: bold 1.8em/1em Georgia,"Times New Roman",Times,serif;
+}
+p{
+    padding: 0.5vh 0;
+    
+}
+img {
+    display: block;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border: 3px solid white;
+  }
+
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, 0.322);
+    
+
+}
+
+/* Events */
+
+.mcont{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  
+    width: 100vw;
+    /* border: 2px solid red; */
+}
+.vcont{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 60vw;
+    /* border:2px solid blue; */
+    padding: 1vh 0;
+}
+
+.banner{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 59vw;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.banner img:hover{
+    transform: scale(1.09)
+    
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 19vw;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+.card img:hover{
+    transform: scale(1.15)
+}
+  .price {
+    color: grey;
+    font-size: 1.5em;
+  }
+  
+  .card button {
+  
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    /* background-color: #000; */
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+.closed{
+    background-color: red;
+}
+.open{
+    background-color: green;
+}
+
+
+
+    
+
+
+@media only screen and (max-width: 1000px){
+    header{
+        width: 100vw;
+        font-size: 2vw;
+        padding: 1vh 0;
+
+
+    }
+    nav{
+        width: 100vw;
+        }
+
+        nav ul{
+            display: flex;
+            justify-content:space-evenly;
+        }
+    nav ul li{
+        width:25vw
+    }
+    nav ul li a{
+        font-size: 4vw;
+    }
+
+    .cont1{
+        display: none;
+        
+    }
+    .cont2{
+        width: 100vw;
+        padding: 2vh;
+    }
+    .cont3{
+        display:none;
+        
+    }
+    img{
+        width: 60%;
+    }
+    footer{
+        font-size: 3vw;
+        height: 3vh;
+    }
+
+/* events */
+.vcont{
+    width: 100vw;
+    flex-flow: column;
+}
+.banner{
+    max-width: 90vw;
+}
+.card{
+    max-width: 90vw;
+}
+
+}
